@@ -1,0 +1,13 @@
+#header {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#header a {
+    font-size: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-weight: bold;
+    color: black;
+}

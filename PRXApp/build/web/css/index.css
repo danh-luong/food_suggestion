@@ -1,0 +1,145 @@
+*, body {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #EAEDED;
+    border-radius: 6px;
+    transition: height 2s ease-out;
+    box-shadow: -7px -1px 84px -42px rgba(194,188,194,1);
+}
+
+#wrapper h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+#wrapper div {
+    margin-top: 10px;
+}
+
+#wrapperSubmitBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#btnSubmit {
+    border-radius: 72px 72px 72px 72px / 57px 57px 57px 57px;
+    border: 1px solid white;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #FF4B2B;
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: transform 80ms ease-in;
+}
+
+#btnSubmit:hover {
+    cursor: pointer;
+}
+
+#btnSubmit:active {
+    transform: scale(0.95);
+}
+
+.inputText label {
+    display: block;
+    font-size: 25px;
+}
+
+.inputText input {
+    width: 100%;
+    border-radius: 4px;
+    outline: none;
+    height: 54px;
+    font-size: 18px;
+    background-color: white;
+    padding: 5px 20px;
+    box-shadow: none;
+    border: none;
+}
+
+.inputText select {
+    width: 100%;
+    border-radius: 4px;
+    outline: none;
+    height: 54px;
+    font-size: 18px;
+    background-color: white;
+    padding: 5px 20px;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+}
+
+.tagGenders p {
+    display: inline-block;
+    font-size: 25px;
+}
+
+.tagGenders label {
+    font-size: 25px;
+}
+
+.tagGenders input {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+}
+
+.error {
+    color: red;
+    font-style: italic;
+    font-size: 20px;
+    display: none;
+}
+
+.errorDisplay {
+    display: block;
+}
+
+#result {
+    visibility: hidden;
+}
+
+#me {
+    margin-right: 10px;
+    margin-top: 20px;
+    transform: scale(1.75);
+}
+
+#span-me {
+    font-size: 25px;
+}
+
+.yob-gone,
+.gender-gone {
+    display: none;
+}
+
+#alt-age,
+#alt-sex {
+    visibility: hidden;
+}
+
+.me-display-none {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+}

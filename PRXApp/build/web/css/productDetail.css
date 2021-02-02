@@ -1,0 +1,133 @@
+body {
+    background: #f6f5f7;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-container img {
+    width: 56%;
+    height: 650px;
+    margin-left: 22%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+} 
+
+#name {
+    width: 100%;
+    height: 10px;
+    line-height: 10px;
+    font-weight: bold;
+    font-size: 38px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#characteristic {
+    margin-top: 20px;
+}
+
+#characteristic ul {
+    display: flex;
+    justify-content: center;
+}
+
+#characteristic ul li {
+    text-decoration: none;
+    list-style: none;
+    margin-left: 35px;
+}
+
+#characteristic ul li i {
+    font-size: 24px;
+}
+
+#characteristic ul li span {
+    font-size: 24px;
+}
+
+#description {
+    width: 70%;
+    margin-left: 17%;
+    text-align: center;
+}
+
+#division {
+    display: block;
+    width: 93%;
+    margin-top: 15px;
+}
+
+#bottom-container {
+    display: flex;
+    margin-left: 2.5%;
+}
+
+#leftside {
+    width: 18%;
+    margin-left: 136px;
+}
+
+#rightside {
+    width: 60%;
+    margin-left: 20px;
+}
+
+.steps-container {
+    margin-bottom: 10px;
+}
+
+.step {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+#button-add {
+    margin-left: 4%;
+    background-color: rgb(44, 139, 67);
+    height: 50px;
+    line-height: 50px;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    transition: transform 80ms ease-in;
+}
+
+#button-add:hover {
+    cursor: pointer;
+    background-color: green;
+}
+
+#button-add:active {
+    transform: scale(0.95);
+}
+
+#tips {
+    margin-left: 8%;
+    width: 90%;
+}
+
+#tips span {
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+#foodId {
+    height: 0px;
+    width: 0px;
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.follow {
+    color: red;
+}

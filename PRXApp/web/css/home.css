@@ -1,0 +1,166 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f6f5f7;
+    overflow-x: no-display;
+}
+
+#container {
+    width: 60%;
+    height: 100%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-child {
+    background-color: white;
+    box-shadow: -7px -4px 38px -11px rgba(194, 188, 194, 1);
+    border-radius: 6px;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container-child img {
+    width: 300px;
+    height: 210px;
+    display: inline-block;
+    border-radius: 6px;
+}
+
+.detail {
+    margin-left: 10px;
+}
+
+.description {
+    margin-top: 15px;
+    overflow-wrap: break-word;
+    width: 97%;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+.description {
+    overflow: hidden;
+    position: relative;
+    line-height: 1.2em;
+    max-height: 6em;
+    text-align: justify;
+    margin-right: -1em;
+    padding-right: 1em;
+}
+.description:before {
+    content: "...";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.description:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: white;
+}
+
+.name {
+    margin-top: 15px;
+}
+
+.name a {
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+#loadMore {
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #FF4B2B;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    padding: 5px 10px;
+    margin: 0px auto;
+    margin-bottom: 40px;
+    background-color: #FF4B2B;
+    color: white;
+}
+
+#loadMore:hover {
+    cursor: pointer;
+}
+
+#loadMore:active {
+    transform: scale(0.95);
+}
+
+.name:hover {
+    text-shadow: 0px 0px 8px rgba(110, 89, 177, 0.76);
+}
+
+#offset {
+  width: 0px;
+  height: 0px;
+  visibility: hidden;
+}
+
+#search {
+  text-align: center;
+}
+
+#search input {
+  border: none;
+  border-color: transparent;
+  outline: none;
+  width: 80%;
+  height: 50px;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-left: 0px;
+  padding: 0px;
+  border-radius: 18px 0px 0px 18px / 18px 10px 0px 18px;
+  text-indent: 15px;
+}
+
+#search i {
+  position: relative;
+  font-size: 30px;
+  background-color: white;
+  height: 49.5px;
+  line-height: 50px;
+  border-radius: 0px 18px 18px 0px;
+  left: -5px;
+  top: 3.5px;
+  text-align: center;
+  width: 50px;
+}
+
+#search i:hover {
+  cursor: pointer;
+}
+
+#calories {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 27px;
+}
+
+#category {
+  width: 15%;
+  height: 35px;
+  margin-top: 15px;
+  margin-left: 76%;
+  border-radius: 21px 21px 21px 21px;
+  outline: none;
+  font-size: 20px;
+}

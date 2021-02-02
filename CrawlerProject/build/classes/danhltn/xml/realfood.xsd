@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="productlist">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="product" maxOccurs="unbounded" type="productType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="productType">
+        <xs:sequence>
+            <xs:element name="imageUrl" type="xs:string"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="time" type="xs:string"/>
+            <xs:element name="serves" type="xs:string"/>
+            <xs:element name="type" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="ingredients" type="ingredientsType"/>
+            <xs:element name="steps" type="stepsType"/>
+            <xs:element name="cals" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ingredientsType">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="ingredient" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="stepsType">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="step" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="tip" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

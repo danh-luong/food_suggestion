@@ -1,0 +1,43 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#table {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+.table-header {
+    color: black;
+    text-align: left;
+    width: 200px;
+    border: 1px solid #dddddd;
+    text-decoration: bold;
+    font-size: 20px;
+    height: 50px;
+    padding: 8px;
+}
+
+.table-data {
+    border: 1px solid #dddddd; 
+    padding: 8px;
+    font-size: 18px;
+}
+
+.table-row:hover {
+    background: #eeeeee;
+    cursor: pointer;
+}
+
+.href-remove {
+    color: black;
+}
+
+.href-remove:hover {
+    color: red;
+}
+
